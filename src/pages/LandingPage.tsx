@@ -19,7 +19,7 @@ const LandingPage = () => {
               to="/contactUs"
               className="bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-blue-100 transition"
             >
-              Book Now
+              BookNow
             </Link>
           </div>
          

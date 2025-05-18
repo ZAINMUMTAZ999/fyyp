@@ -20,7 +20,7 @@ const {showToast}=AppContext();
   };
 
   return (
-    <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 mt-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
         {/* Contact Info */}
         <div>
