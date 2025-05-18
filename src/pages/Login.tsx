@@ -48,7 +48,7 @@ const Login = () => {
     })
     return (
         
-        <form className="flex flex-col bg-slate-400 rounded-lg w-full md:w-1/2 h-auto p-4 mx-auto" onSubmit={onSubmit}>
+        <form className="flex flex-col mt-4 bg-slate-400 rounded-lg w-full md:w-1/2 h-auto p-4 mx-auto" onSubmit={onSubmit}>
             <h2 className="flex justify-center text-2xl font-bold">Login</h2>
             <div className="flex flex-col gap-4">
                 <label className="text-gray-700 text-sm font-bold flex-1">
