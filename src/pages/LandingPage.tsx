@@ -1,4 +1,5 @@
 
+import { Link } from 'lucide-react';
 import { FaBus, FaClock, FaMoneyBillWave, FaPhoneAlt } from 'react-icons/fa';
 
 const LandingPage = () => {
@@ -14,12 +15,12 @@ const LandingPage = () => {
             <p className="text-lg mb-6">
               Compare routes, pick your seat, and travel with confidence. Pakistan’s #1 trusted bus booking platform.
             </p>
-            <a
-              href="/allBuses"
+            <Link
+              to="/allBuses"
               className="bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-blue-100 transition"
             >
               Book Now
-            </a>
+            </Link>
           </div>
          
         </div>
@@ -62,12 +63,12 @@ const LandingPage = () => {
           <p className="text-gray-700 mb-6">
             Book your next bus ride with us and travel in comfort and style. No lines, no hassle.
           </p>
-          <a
-            href="/allBuses"
+          <Link
+            to="/allBuses"
             className="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg hover:bg-blue-700 transition"
           >
             Find a Bus
-          </a>
+          </Link>
         </div>
       </section>
 
