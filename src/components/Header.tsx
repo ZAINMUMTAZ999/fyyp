@@ -18,7 +18,7 @@ const Header = () => {
           <div className="flex items-center">
             {isLogged ? (
               <>
-                <div className="hidden sm:ml-6 sm:flex sm:items-center">
+                <div className="flex flex-wrap items-center gap-2 ml-2">
                   {/* <div className="ml-4">Services</div>
                   <div className="ml-4">Blogs</div> */}
 
