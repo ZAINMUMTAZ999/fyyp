@@ -1,4 +1,4 @@
-import { AllUserFetching } from "../Api";
+// import { AllUserFetching } from "../Api";
 import { 
     DropdownMenu,
     DropdownMenuTrigger,
@@ -8,7 +8,7 @@ import {
   } from "@/components/ui/dropdown-menu";
 import { BsCaretDownFill } from "react-icons/bs";
 
-import { useQuery } from "react-query";
+// import { useQuery } from "react-query";
 
 import Logout from "./Logout";
 import { DropdownMenuLabel } from "@radix-ui/react-dropdown-menu";
@@ -16,7 +16,7 @@ import user from "../../src/assets/user.png"
 
 const DropDownUser = () => {
 
-    const { data: userFetchigData } = useQuery("users", AllUserFetching);
+    // const { data: userFetchigData } = useQuery("users", AllUserFetching);
 // console.log(userFetchigData)
 
     return (
@@ -36,7 +36,7 @@ const DropDownUser = () => {
              
                 <DropdownMenuLabel >
                   
-                     {userFetchigData?.user.email}
+                     {/* {userFetchigData?.user.email} */}
                 {/* {userFetchigData?.user?.firstName}  */}
                     
                     </DropdownMenuLabel>

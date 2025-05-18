@@ -42,7 +42,7 @@ const Register = () => {
 
     }
   });
-  const onSubmit = handleSubmit((data) => {
+  const onSubmit = handleSubmit((data:any) => {
     apiMutate.mutate(data);
   })
   return (
