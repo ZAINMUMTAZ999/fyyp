@@ -22,7 +22,7 @@ console.log(buses)
   useEffect(() => {
     const fetchBuses = async () => {
       try {
-        const response = await axios.get(' https://682a2d37833227b9f2a477bc--fascinating-hamster-38f55b.netlify.app/.netlify/functions/api/v2/AllBuses');
+        const response = await axios.get('https://682a30ee1e1b00bd62d68cba--fascinating-hamster-38f55b.netlify.app/.netlify/functions/api/v2/AllBuses');
         setBuses(response.data);
       } catch (err) {
         console.error(err);

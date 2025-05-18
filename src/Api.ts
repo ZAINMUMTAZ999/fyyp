@@ -26,7 +26,7 @@ import { loginUserTypes } from "./pages/Login";
 //   : '/api';
 
 const Base_Url_API =
-  " https://682a2d37833227b9f2a477bc--fascinating-hamster-38f55b.netlify.app/.netlify/functions/api";
+  "https://682a30ee1e1b00bd62d68cba--fascinating-hamster-38f55b.netlify.app/.netlify/functions/api";
 // const Base_Url_API = import.meta.env.PROD
 //   ? '/api'
 //   : import.meta.env.FRONTEND_URL;
@@ -55,7 +55,7 @@ const registerApi = async (formDatajson: registerUserTypes) => {
 // http://localhost:8000/api/login
 const loginApi = async (formDatajson: loginUserTypes) => {
   const response = await fetch(
-    "https://682a21d9ba603643e6fcef39--fascinating-hamster-38f55b.netlify.app/.netlify/functions/api/v2/login",
+    "https://682a30ee1e1b00bd62d68cba--fascinating-hamster-38f55b.netlify.app/.netlify/functions/api/v2/login",
     {
       method: "POST",
       credentials: "include",
@@ -95,7 +95,7 @@ const AddBusApi = async (formDatajson: addBusTypes) => {
   }
 };
 const validateToken = async () => {
-  const response = await fetch("https://682a21d9ba603643e6fcef39--fascinating-hamster-38f55b.netlify.app/.netlify/functions/api/v2/validate-token", {
+  const response = await fetch("https://682a30ee1e1b00bd62d68cba--fascinating-hamster-38f55b.netlify.app/.netlify/functions/api/v2/validate-token", {
     credentials: "include",
   });
   if (!response.ok) {
