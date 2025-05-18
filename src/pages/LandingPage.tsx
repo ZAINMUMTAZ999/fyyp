@@ -16,7 +16,7 @@ const LandingPage = () => {
               Compare routes, pick your seat, and travel with confidence. Pakistan’s #1 trusted bus booking platform.
             </p>
             <Link
-              to="/allBuses"
+              to="/contactUs"
               className="bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-blue-100 transition"
             >
               Book Now
@@ -64,7 +64,7 @@ const LandingPage = () => {
             Book your next bus ride with us and travel in comfort and style. No lines, no hassle.
           </p>
           <Link
-            to="/allBuses"
+            to="/contactUs"
             className="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg hover:bg-blue-700 transition"
           >
             Find a Bus
