@@ -1,6 +1,5 @@
-
-import { Link } from 'lucide-react';
 import { FaBus, FaClock, FaMoneyBillWave, FaPhoneAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
   return (
