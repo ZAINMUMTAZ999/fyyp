@@ -51,88 +51,89 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { AppContext } from "../context/AppNotify";
 import DropDownUser from "./DropDownUser";
-import { Menu, X } from "lucide-react"; // optional icons
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const { isLogged } = AppContext();
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow">
+    <header className="bg-white shadow-md fixed top-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
+        <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center">
-            <Link to="/landingPage" className="text-2xl font-bold text-indigo-600">
-              Online Booking
-            </Link>
-          </div>
+          <Link to="/landingPage" className="text-xl font-bold text-indigo-600">
+            Online Booking
+          </Link>
 
-          {/* Hamburger for mobile */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setMenuOpen(!menuOpen)}
-              className="text-gray-600 hover:text-indigo-600 focus:outline-none"
-            >
-              {menuOpen ? <X size={28} /> : <Menu size={28} />}
-            </button>
-          </div>
-
-          {/* Menu for medium and larger screens */}
-          <div className="hidden md:flex items-center space-x-4">
+          {/* Desktop Nav */}
+          <div className="hidden md:flex items-center gap-4">
             {isLogged ? (
               <>
                 <Link
                   to="/addBus"
-                  className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 shadow transition"
+                  className="text-sm px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
                 >
                   Add Bus
                 </Link>
                 <Link
                   to="/allBuses"
-                  className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 shadow transition"
+                  className="text-sm px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
                 >
                   All Buses
                 </Link>
                 <Link
                   to="/contactUs"
-                  className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 shadow transition"
+                  className="text-sm px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
                 >
                   Contact Us
                 </Link>
                 <DropDownUser />
               </>
             ) : (
-              <Link to="/login" className="text-indigo-600 font-semibold hover:text-indigo-800">
+              <Link
+                to="/login"
+                className="text-indigo-600 font-medium text-sm hover:text-indigo-800 transition"
+              >
                 Sign In
               </Link>
             )}
           </div>
+
+          {/* Mobile Hamburger */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="text-gray-700 focus:outline-none"
+            >
+              {menuOpen ? <X size={26} /> : <Menu size={26} />}
+            </button>
+          </div>
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Nav */}
       {menuOpen && (
-        <div className="md:hidden px-4 pb-4 space-y-2">
+        <div className="md:hidden bg-white shadow-inner px-4 py-3 space-y-3">
           {isLogged ? (
             <>
               <Link
                 to="/addBus"
-                className="block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 shadow transition"
+                className="block w-full text-sm px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
                 onClick={() => setMenuOpen(false)}
               >
                 Add Bus
               </Link>
               <Link
                 to="/allBuses"
-                className="block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 shadow transition"
+                className="block w-full text-sm px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
                 onClick={() => setMenuOpen(false)}
               >
                 All Buses
               </Link>
               <Link
                 to="/contactUs"
-                className="block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 shadow transition"
+                className="block w-full text-sm px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
                 onClick={() => setMenuOpen(false)}
               >
                 Contact Us
@@ -144,7 +145,7 @@ const Header = () => {
           ) : (
             <Link
               to="/login"
-              className="block text-indigo-600 font-semibold hover:text-indigo-800"
+              className="block text-sm font-medium text-indigo-600 hover:text-indigo-800"
               onClick={() => setMenuOpen(false)}
             >
               Sign In
