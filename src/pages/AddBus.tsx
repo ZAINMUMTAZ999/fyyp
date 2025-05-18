@@ -63,7 +63,7 @@ const AddBus: React.FC = () => {
         data.append('imageFile', formData.imageFile);
       }
 
-      const response = await axios.post("https://682a21d9ba603643e6fcef39--fascinating-hamster-38f55b.netlify.app/.netlify/functions/api/v2/addBus", data, {
+      const response = await axios.post(" https://682a2d37833227b9f2a477bc--fascinating-hamster-38f55b.netlify.app/.netlify/functions/api/v2/addBus", data, {
 withCredentials:true,
         headers: {
           'Content-Type': 'multipart/form-data',

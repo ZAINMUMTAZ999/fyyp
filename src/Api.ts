@@ -26,7 +26,7 @@ import { loginUserTypes } from "./pages/Login";
 //   : '/api';
 
 const Base_Url_API =
-  "https://682a21d9ba603643e6fcef39--fascinating-hamster-38f55b.netlify.app/.netlify/functions/api";
+  " https://682a2d37833227b9f2a477bc--fascinating-hamster-38f55b.netlify.app/.netlify/functions/api";
 // const Base_Url_API = import.meta.env.PROD
 //   ? '/api'
 //   : import.meta.env.FRONTEND_URL;
