@@ -47,7 +47,7 @@ const Register = () => {
   })
   return (
 
-    <form className="flex flex-col mt-4 bg-slate-400 rounded-lg w-full md:w-1/2 h-auto p-4 mx-auto" onSubmit={onSubmit}>
+    <form className="flex flex-col mt-14 bg-slate-400 rounded-lg w-full md:w-1/2 h-auto p-4 mx-auto" onSubmit={onSubmit}>
       <h2 className="flex justify-center text-2xl font-bold">Register</h2>
       <div className="flex flex-col md:flex-row gap-4">
         <label className="text-gray-700 text-sm font-bold flex-1">
