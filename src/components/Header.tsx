@@ -63,7 +63,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/landingPage" className="text-xl font-bold text-indigo-600">
-            Online Booking
+            Online Booking App
           </Link>
 
           {/* Desktop Nav */}
