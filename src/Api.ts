@@ -1,6 +1,22 @@
-import { registerUserTypes } from "./pages/Register";
-
-import { addBusTypes } from "../../backend/src/models/addBus.models";
+export type addBusTypes = {
+  fromLocation: string;
+  toLocation: string;
+  startDate: Date;
+  endDate: Date;
+  price: number;
+  seatStatus: "Available" | "Booked";
+  imageFile: string;
+  busDetails: string;
+};
+export type registerUserTypes = {
+  _id: string;
+  email: string;
+  password: string; 
+  firstName: string;
+  lastName: string;
+  role:string;
+  imageFile:string
+};
 
 import { loginUserTypes } from "./pages/Login";
 
